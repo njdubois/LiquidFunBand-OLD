@@ -4,7 +4,7 @@ import Navigation from './components/navbar';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './components/Home';
 import Music from './components/Music';
-import TheBand from './components/TheBand';
+import TheBand from './components/Bio/TheBand';
 import Events from './components/Events';
 import Acoustic from './components/Acoustic';
 
