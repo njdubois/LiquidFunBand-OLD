@@ -96,7 +96,23 @@ export default class TheBand extends React.Component {
           instruments={["Bass", "Vocals"]}
           picture=""
           born="Somewhere"
-          influences=""
+          influences="A lot of stuff!"
+        />
+
+        <ABio
+          memberName='Tony "The Tony" Giangreco'
+          instruments={["Drums", "Vocals"]}
+          picture=""
+          born="Elmhurst, IL"
+          influences="Beatles, The Who, Nirvana, Genesis and The Everly Brothers."
+        />
+
+        <ABio
+          memberName='Nick DuBois'
+          instruments={["Guitar", "Vocals"]}
+          picture=""
+          born="Itasca, IL"
+          influences="Beatles, Offspring, Green Day and Neil Young."
         />
       </MainPageContent>
     );

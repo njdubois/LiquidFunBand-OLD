@@ -4,10 +4,7 @@ import {Col, Row} from 'reactstrap';
 
 const BandBioHeader = styled.div`
   text-align:center;
-  font-family: 'Rye', cursive;
-  font-size:1.9rem;
-  font-weight: 100;
-  color:#E0A607;
+
 `;
 
 const BioRow = styled.div`
@@ -49,9 +46,26 @@ const MemberBio = styled.div`
     color:#E0A607;
 `;
 
-const MemberName = styled.span``;
-const Instruments = styled.span``;
-const BioLabel = styled.span``;
+const MemberName = styled.span`
+  font-family: 'Rye', cursive;
+  font-size:1.9rem;
+  font-weight: 100;
+  color:#E0A607;
+`;
+
+const Instruments = styled.span`
+  font-size:1.5rem;
+  font-weight: 100;
+  color:#E0A607;
+`;
+
+const BioLabel = styled.span`
+  font-family: 'Rye', cursive;
+  font-size:1.2rem;
+  font-weight: 100;
+  color:#E0A607;
+`;
+
 export default class TheBand extends React.Component {
   render() {
 
@@ -62,7 +76,7 @@ export default class TheBand extends React.Component {
           <BioRow>
             <Row>
               <Col>
-                <BandBioHeader><MemberName>{memberName}</MemberName><Instruments>{instruments}</Instruments></BandBioHeader>
+                <BandBioHeader><MemberName>{ `${memberName}: `}</MemberName><Instruments>{instruments.join(", ")}</Instruments></BandBioHeader>
               </Col>
             </Row>
           </BioRow>
@@ -76,10 +90,10 @@ export default class TheBand extends React.Component {
                   <BioContentCol sm="12" md="8">
                     <MemberBio>
                       <div>
-                        <BioLabel>Born</BioLabel>{born}
+                        <BioLabel>Born : </BioLabel>{born}
                       </div>
                       <div>
-                        <BioLabel>Influences</BioLabel>{influences}
+                        <BioLabel>Influences : </BioLabel>{influences}
                       </div>
                     </MemberBio>
                   </BioContentCol>
