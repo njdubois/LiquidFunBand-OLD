@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap'
+import {BigLabel, MainPageContent} from '../CommonStyledComponents';
 
 const LeftColumnContent = styled.div`
   text-align:center;
@@ -16,12 +17,6 @@ const RightColumnContent = styled.div`
   @media (min-width: 768px) {
     text-align:left;
   }
-`;
-
-const BandName = styled.span`
-    font-family: 'Rye', cursive;
-    font-size:1.9rem;
-    font-weight: 100;
 `;
 
 const HomePageLogo = styled.img.attrs({
@@ -46,10 +41,6 @@ const SmallHomePageLogo = styled.img.attrs({
   }
 `;
 
-const MainPageContent = styled(Row)`
-  background:rgba(0,0,0, .5);
-`;
-
 const HomePageColumn = styled(Col)`
   color:#E0A607;
   margin:0;
@@ -63,7 +54,7 @@ const HomePageColumn = styled(Col)`
     padding-right:25px;
      
     @media (min-width: 768px) {
-      max-width:350px;
+      max-width:450px;
       display:inline-block;  
     }
   
@@ -95,7 +86,7 @@ export default class Home extends React.Component {
           <RightColumnContent>
             <div>
             <p>
-              <BandName>Liquid Fun Band</BandName> is a high-energy band featuring catchy
+              <BigLabel>Liquid Fun Band</BigLabel> is a high-energy band featuring catchy
               tunes about all aspects of life, love & observations.
             </p>
             </div>

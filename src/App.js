@@ -2,11 +2,11 @@ import React from 'react';
 import './App.scss';
 import Navigation from './components/navbar';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from './components/Home';
-import Music from './components/Music';
-import TheBand from './components/Bio/TheBand';
-import Events from './components/Events';
-import Acoustic from './components/Acoustic';
+import Home from './routes/Home';
+import Music from './routes/Music';
+import TheBand from './routes/Bio/TheBand';
+import Events from './routes/Events';
+import Acoustic from './routes/Acoustic';
 
 function App() {
   return (
