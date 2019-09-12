@@ -8,7 +8,7 @@ const ABandBio = styled.div`
 `;
 
 const BandBioHeader = styled.div`
-  text-align:center;
+  text-align:left;
 
 `;
 
@@ -37,7 +37,7 @@ const MemberPicture = styled.img`
 
 const MemberBio = styled.div`
     font-size:1rem;
-    line-height:1.2rem;
+    line-height:1.5rem;
     text-align:left;
     color:#E0A607;
     

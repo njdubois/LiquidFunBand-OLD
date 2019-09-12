@@ -5,12 +5,7 @@ import {BigLabel} from '../../CommonStyledComponents';
 
 const HeaderRow = styled.div`
   text-align:center;
-  
-  @media (min-width: 1200px) {
-    margin-left:200px;
-    margin-right:200px;
-    
-  }
+  margin: 25px 200px 25px 200px;  
 `;
 
 export const PageHeader = ({SectionHeader}) => {

@@ -97,21 +97,21 @@ export default class Home extends React.Component {
             </p>
             </div>
             <Row>
-              <Col xs={{ size: 6}} md={{ size: 12}}>
+              <Col xs={{ size: 12}} sm={{ size: 6}} md={{ size: 12}}>
                 <ul>
-              <li>
-                Live Performance<br />
-                (4 Piece Band & Acoustic Duo)
-              </li>
-              <li>Open Mic</li>
-              <li>Studio Recording</li>
-              <li>Studio Musicians</li>
-              <li>Sound Engineer</li>
-              <li>Song Collaboration</li>
-              <li>Networking</li>
-            </ul>
+                  <li>
+                    Live Performance<br />
+                    (4 Piece Band & Acoustic Duo)
+                  </li>
+                  <li>Open Mic</li>
+                  <li>Studio Recording</li>
+                  <li>Studio Musicians</li>
+                  <li>Sound Engineer</li>
+                  <li>Song Collaboration</li>
+                  <li>Networking</li>
+                </ul>
               </Col>
-              <Col xs={{ size: 6}} md={{ size: 0}}>
+              <Col xs={{ size: 12}} sm={{ size: 6}} md={{ size: 0}}>
                 <SmallHomePageLogo />
               </Col>
             </Row>

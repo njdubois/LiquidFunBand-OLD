@@ -7,21 +7,22 @@ import Music from './routes/Music';
 import TheBand from './routes/Bio/TheBand';
 import Events from './routes/Events';
 import Acoustic from './routes/Acoustic';
+import Footer from './components/footer';
 
 function App() {
   return (
     <Router>
-      <div>
-        <div className="App">
+      <div className="App">
 
-          <Navigation />
+        <Navigation />
 
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/music" component={ Music } />
-          <Route exact path="/the_band" component={ TheBand } />
-          <Route exact path="/acoustic" component={ Acoustic } />
-          <Route exact path="/events" component={ Events } />
-        </div>
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/music" component={ Music } />
+        <Route exact path="/the_band" component={ TheBand } />
+        <Route exact path="/acoustic" component={ Acoustic } />
+        <Route exact path="/events" component={ Events } />
+
+        <Footer />
       </div>
     </Router>
   );

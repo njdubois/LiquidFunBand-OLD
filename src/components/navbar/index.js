@@ -37,6 +37,9 @@ const SmallBandLabel = styled.a`
   display:inline-block;
   padding-left:10px;
   
+  @media (max-width: 450px) {
+    font-size: 1rem;
+  }
 `;
 
 const MenuToggle = styled.div`
@@ -50,6 +53,10 @@ const MenuToggle = styled.div`
   color:white;
   display:inline-block;
   float:right;
+
+  @media (max-width: 450px) {
+    font-size: 1rem;
+  }
 `;
 
 const NavLi = styled.li`
@@ -111,7 +118,7 @@ export default class Navigation extends React.Component {
             <NavLink href="/">Liquid Fun Band</NavLink>
           </NavLi>
           <NavLi>
-            <NavLink href="/music">Music</NavLink>
+            <NavLink href="/music">Media</NavLink>
           </NavLi>
           <NavLi>
             <NavLink href="/the_band">The Band</NavLink>
