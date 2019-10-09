@@ -55,7 +55,7 @@ export default class ContactUs extends React.Component {
       method: "POST",
       url:  process.env.REACT_APP_API_URL + '/mailer',
       headers: {
-        'apiKey': process.env.REACT_APP_API_KEY,o
+        'apiKey': process.env.REACT_APP_API_KEY,
       },
       data: {
         name: this.state.name,
