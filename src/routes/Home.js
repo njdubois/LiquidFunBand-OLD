@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'reactstrap'
-import {BigLabel, MainPageContent} from '../CommonStyledComponents';
+import {BigLabel, MainPageContent, StyledBulletList, StyledPTag} from '../CommonStyledComponents';
+import ContactUs from '../components/ContactUsForm';
 
 const LeftColumnContent = styled.div`
   text-align:center;
@@ -46,78 +47,60 @@ const HomePageColumn = styled(Col)`
   margin:0;
   padding:50px;
   
-  p {
-    font-size:1.5rem;
-    line-height:1.8rem;
-    text-align:left;
-    padding-left:25px; 
-    padding-right:25px;
-     
-    @media (min-width: 768px) {
-      max-width:450px;
-      display:inline-block;  
-    }
-  
-  }
-  ul {
-    max-width:350px;
-    display:inline-block;
-      
-    li {
-      font-family: 'Rye', cursive;
-      font-weight:200;
-      font-size:1.2rem;
-      text-align:left;
-    }
-  }
- 
 `;
 
 export default class Home extends React.Component {
   render() {
     return (
-      <MainPageContent>
-        <HomePageColumn xs={{ size: 12, order: 2}} md={{ size: 6, order: 1}}>
-          <LeftColumnContent>
-            <HomePageLogo />
-          </LeftColumnContent>
-        </HomePageColumn>
-        <HomePageColumn xs={{ size: 12, order: 1}} md={{ size: 6, order: 1}}>
-          <RightColumnContent>
-            <div>
-            <p>
-              <BigLabel>Liquid Fun Band</BigLabel> is a high-energy band featuring catchy
-              tunes about all aspects of life, love & observations.
-            </p>
-            </div>
-            <div>
-            <p>
-              ​Influenced heavily by rock n' roll, folk and alt-country. We
-              always play from the heart and love to play live!
-            </p>
-            </div>
-            <Row>
-              <Col xs={{ size: 12}} sm={{ size: 6}} md={{ size: 12}}>
-                <ul>
-                  <li>
-                    Live Performance<br />
-                    (4 Piece Band & Acoustic Duo)
-                  </li>
-                  <li>Open Mic</li>
-                  <li>Studio Recording</li>
-                  <li>Studio Musicians</li>
-                  <li>Sound Engineer</li>
-                  <li>Song Collaboration</li>
-                  <li>Networking</li>
-                </ul>
-              </Col>
-              <Col xs={{ size: 12}} sm={{ size: 6}} md={{ size: 0}}>
-                <SmallHomePageLogo />
-              </Col>
-            </Row>
-          </RightColumnContent>
-        </HomePageColumn>
-      </MainPageContent>
+      <div>
+        <MainPageContent>
+          <HomePageColumn xs={{ size: 12, order: 2}} md={{ size: 6, order: 1}}>
+            <LeftColumnContent>
+              <HomePageLogo />
+            </LeftColumnContent>
+          </HomePageColumn>
+          <HomePageColumn xs={{ size: 12, order: 1}} md={{ size: 6, order: 1}}>
+            <RightColumnContent>
+              <div>
+              <StyledPTag>
+                <BigLabel>Liquid Fun Band</BigLabel> is a high-energy band featuring catchy
+                tunes about all aspects of life, love & observations.
+              </StyledPTag>
+              </div>
+              <div>
+              <p>
+                ​Influenced heavily by rock n' roll, folk and alt-country. We
+                always play from the heart and love to play live!
+              </p>
+              </div>
+              <Row>
+                <Col xs={{ size: 12}} sm={{ size: 6}} md={{ size: 12}}>
+                  <StyledBulletList>
+                    <li>
+                      Live Performance<br />
+                      (4 Piece Band & Acoustic Duo)
+                    </li>
+                    <li>Open Mic</li>
+                    <li>Studio Recording</li>
+                    <li>Studio Musicians</li>
+                    <li>Sound Engineer</li>
+                    <li>Song Collaboration</li>
+                    <li>Networking</li>
+                  </StyledBulletList>
+                </Col>
+                <Col xs={{ size: 12}} sm={{ size: 6}} md={{ size: 0}}>
+                  <SmallHomePageLogo />
+                </Col>
+              </Row>
+            </RightColumnContent>
+          </HomePageColumn>
+        </MainPageContent>
+        <MainPageContent>
+          <HomePageColumn>
+            <ContactUs />
+          </HomePageColumn>
+        </MainPageContent>
+      </div>
     );
   }
 }
