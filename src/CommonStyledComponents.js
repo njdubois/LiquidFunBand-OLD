@@ -20,3 +20,23 @@ export const SmallLabel = styled.span`
   font-weight: 100;
   color:#E0A607;
 `;
+
+export const StyledBulletList = styled.ul`
+  max-width:350px;
+  display:inline-block;
+    
+  li {
+    font-family: 'Rye', cursive;
+    font-weight:200;
+    font-size:1.2rem;
+    text-align:left;
+  }
+`;
+
+export const StyledPTag = styled.p`
+  font-size:1.5rem;
+  line-height:1.8rem;
+  text-align:left;
+  padding-left:25px;
+  padding-right:25px;
+`;
