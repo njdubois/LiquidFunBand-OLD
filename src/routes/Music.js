@@ -76,13 +76,13 @@ export default class Music extends React.Component {
                   <SmallLabel>
                     Offical Demo
                   </SmallLabel>
-                  <YoutubeModal VideoId="kCB_7-79Kbo"/>
+                  <YoutubeModal VideoId="3hrAlzj32VM"/>
                 </VideoContainer>
                 <VideoContainer>
                   <SmallLabel>
                     Rosalie
                   </SmallLabel>
-                  <YoutubeModal VideoId="DVV6i5sSXq0"/>
+                  <YoutubeModal VideoId="Kc6qteYZ6z8"/>
                 </VideoContainer>
                 <VideoContainer>
                   <SmallLabel>
